@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--
+    Naming Reference:
+    -> wrap_ = wrapper//container
+    -> cont_ = content
+    -> module_ = function
+    -> img_ = graphic file
+-->
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport"   content="width=device-width, initial-scale=1" />
+        <title>DIXON E-Store</title>
+        <link rel="shortcut icon" href="images/logo/logo2small.jpg">
+        <link href="main.css" rel="stylesheet" />
+        <link href="nav.css" rel="stylesheet" />
+        <link href="footer.css" rel="stylesheet" />
+        <link href="form.css" rel="stylesheet" />
+        <link href="login.css" rel="stylesheet" />
+        <link href="brand.css" rel="stylesheet" />
+        <!--<script src="slideshow.js"></script>-->
+    </head>
+    <body>
+        <div class="header">
+            <div class="wrap_header">
+                <div class="wrap_useroptions">
+                        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+                            <div id="id02" class="modal">
+                                <form class="modal-content animate" action="home.html" method="post">
+                                    <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="images/logo/logow.png" alt="Avatar" class="avatar">
+                                    </div>
+                            
+                                    <div class="wrap_userinputlogin">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+                                
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                        
+                                    <label for="cfmpsw"><b>Confirm Password</b></label>
+                                    <input type="cfmpassword" placeholder="Enter Confirm Password" name="cfmpsw" required>
+                                    
+                                    <button type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                    </div>
+                            
+                                    <div class="wrap_userinputlogin" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id02').style.display='none';" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                            <div id="id01" class="modal">
+                                <form class="modal-content animate" action="home.html" method="post">
+                                    <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="images/logo/logow.png" alt="Avatar" class="avatar">
+                                    </div>
+                                    <div class="wrap_userinputlogin">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+                                
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                        
+                                    <button type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                    </div>
+                                    <div class="wrap_userinputlogin" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none';" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById('id01');
+                    
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        <div class="cart">
+                            <a href="cart.html">
+                                <ion-icon name="basket"></ion-icon>Cart<span>0</span>
+                            </a>
+                        </div>
+                        
+                </div>
+                <div id="wrap_logo">
+                    <a href="home.html">
+                        <img src="images/logo/logo2small.jpg" id="img_logo" alt="It's morbin' time">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav">
+            <div class="wrap_nav">
+                <a href="home.html">Home</a>
+                <div class="module_dropdown">
+                    <button id="button_dropbtn">Brand &#9660;</button>
+                    <div class="cont_dropdown">
+                        <p>Browse brands...</p>
+                        <a href="acer.html">Acer</a>
+                        <a href="asus.html">Asus</a>
+                        <a href="hp.html">HP</a>
+                        <a href="huawei.html">Huawei</a>
+                        <a href="msi.html">MSI</a>
+                    </div>
+                </div>
+                <div class="module_dropdown">
+                    <button id="button_dropbtn">Category &#9660;</button>
+                    <div class="cont_dropdown">
+                        <p>Browse category...</p>
+                        <a href="laptop.html">Laptop</a>
+                        <a href="mouse.html">Mouse</a>
+                        <a href="keyboard.html">Keyboard</a>
+                    </div>
+                </div>
+                <a href="faq.html">FAQ</a>
+                <a href="about.html">About Us</a>
+            </div>  
+        </div>
+        <div class="products-container">
+            <div class="product-header">
+                <h5 class="product-title">PRODUCT</h5>
+                <h5 class="price">PRICE</h5>
+                    <h5 class="quantity">QUANTITY</h5>
+                <h5 class="total">TOTAL</h5>
+            </div>
+            <div class="products">
+                
+            </div>
+            <a href="payment.html" id="paymentbutton">Proceed To Payment</a>
+        </div>
+            <script src="acer.js"></script>
+            <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    </body>
+    <footer>
+        <div class="wrap_footer">
+            <div class="wrap_nav_footer">
+                <h5>Navigation</h5>
+                <a href="home.html">Home</a>
+                <a href="#">Brand</a>
+                    <div class="smallerwrap_nav_footer">
+                        <ul>
+                            <li><a href="#">Acer</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">HP</a></li>
+                            <li><a href="#">Huawei</a></li>
+                        </ul>
+                    </div>
+                    <a href="#">Category</a>
+                        <div class="smallerwrap_nav_footer">
+                            <ul>
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Mouse</a></li>
+                                <li><a href="#">Keyboard</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+            </div>
+            <div class="wrap_brand">
+                <h5>Our Partners</h5>
+                    <a href="https://www.acer.com/ac/en/MY/content/home"><img id="icon1" src="images/logo/acerlogo.png"></a>
+                    <a href="https://www.hp.com/my-en/home.html"><img id="icon2" src="images/logo/hplogo.png"></a>
+                    <a href="https://www.asus.com/my/"><img id="icon3" src="images/logo/asuslogo3.png"></a>
+
+                    <a href="https://www.huawei.com/my/"><img id="icon4" src="images/logo/huawei-logo-png-6978.png"></a>
+
+                    <a href="https://my.msi.com/"><img id="icon5" src="images/logo/msilogo.png"></a>
+
+            </div>
+            <div class="wrap_form">
+                <div class="form">
+                  <div class="feedbackform">
+                    <form name="form1" action="">
+                      <h5>Customer Feedback</h5>
+                      <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                      </div>
+                      <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                      </div>
+                      <div class="input-container phone">
+                        <input type="tel" name="phone" class="input" />
+                        <label for="">Contact Number</label>
+                        <span>Phone</span>
+                      </div>
+                      <div class="input-container textarea">
+                        <textarea name="command" class="input"></textarea>
+                        <label for="">Leave your comment here!</label>
+                        <span>Message</span>
+                      </div>
+                      <input type="submit" value="Submit" class="btn" onclick="openPopup(document.form1.email)"/>
+                      <script src="form.js"></script>
+                    </form>
+                  </div>
+                </div> 
+              </div>
+        </div>
+        <p>©DIXON Computer Inc. All Rights Reserved.</p>
+            <hr id="line2">
+            <div id="wrap_media">
+                <ul>
+                    <!--Social media icons at the footer-->
+                    <li><a href="https://www.facebook.com"><img src="images/logo/social-facebook.png" width="3%"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="images/logo/social-Instagram.png" width="3%"></a></li>
+                    <li><a href="https://www.youtube.com"><img src="images/logo/social-YouTube.png" width="3%"></a></li>
+                    <li><a href="https://www.flaticon.com"><img src="images/logo/social-LinkedIn.png" width="3%"></a></li>
+                </ul>
+            </div>
+    </footer>
+</html>
+        

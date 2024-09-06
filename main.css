@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900);
+
+*{margin:0;padding:0;} /*<-- don't change this*/
+body{
+    background-image: url('images/background/bgdark.png');
+    background-size: cover;
+    font-family: "Raleway",sans-serif;
+}
+.wrap_header{background-color: #111111;}
+#img_logo{
+    margin: 10px;
+    padding-left: 20px;
+    height: 90px;
+}
+.wrap_useroptions{padding-top: 10px;}
+.wrap_useroptions a{
+    color: #a5a5a5;
+    font-size: 1.0em;
+    padding: 5px 20px;
+    text-decoration: none;
+    float: right;
+}
+.wrap_useroptions button{
+    color: #a5a5a5;
+    font-size: 1.0em;
+    padding: 5px 20px;
+    text-decoration: none;
+    float: right;
+    background-color: inherit;
+    font-family: inherit;
+    border: none;
+}
+.wrap_useroptions a:hover, .wrap_useroptions button:hover{color: #40D3DC;}
+#line1{
+    height: 2px;
+    width: 80%;
+    color: #40D3DC;
+    background-color: #40D3DC;
+    border: none;
+    margin: 0px auto 0px auto;
+}
+.cart span{
+    padding-left:5px;  
+    padding-bottom: 5px; 
+    font-size: 0.8em;
+}
+
+.cart a{
+    text-decoration: none;
+    background-color: inherit;
+    color:#a5a5a5;
+    cursor: pointer;
+}
+.cart ion-icon{
+    vertical-align: bottom;
+    padding-right: 7px;
+}
+.container1 {
+    color: #fff;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 100px;
+}
+.container1 h1 {
+    font-size: 4em;
+    margin: 50px;
+}
+.container1 h2 {
+    font-size: 3em;
+    margin: 50px;
+}
+.container1 p {
+    font-size: 1.2em;
+}

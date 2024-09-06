@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--
+    Naming Reference:
+    -> wrap_ = wrapper//container
+    -> cont_ = content
+    -> module_ = function
+    -> img_ = graphic file
+-->
+<html>
+    <head lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport"   content="width=device-width, initial-scale=1" />
+        <title>DIXON E-Store</title>
+        <link rel="shortcut icon" href="images/logo/logo2small.jpg">
+        <link href="main.css" rel="stylesheet" />
+        <link href="nav.css" rel="stylesheet" />
+        <link href="footer.css" rel="stylesheet" />
+        <link href="form.css" rel="stylesheet" />
+        <link href="login.css" rel="stylesheet" />
+        <link href="faq.css" rel="stylesheet" />
+        <!--<script src="slideshow.js"></script>-->
+    </head>
+    <body>
+        <div class="header">
+            <div class="wrap_header">
+                <div class="wrap_useroptions">
+                        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
+                            <div id="id02" class="modal">
+                                <form class="modal-content animate" action="home.html" method="post">
+                                    <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="images/logo/logow.png" alt="Avatar" class="avatar">
+                                    </div>
+                            
+                                    <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+                                
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                        
+                                    <label for="cfmpsw"><b>Confirm Password</b></label>
+                                    <input type="cfmpassword" placeholder="Enter Confirm Password" name="cfmpsw" required>
+                                    
+                                    <button type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                    </div>
+                            
+                                    <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id02').style.display='none';" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                            <div id="id01" class="modal">
+                                <form class="modal-content animate" action="home.html" method="post">
+                                    <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                    <img src="images/logo/logow.png" alt="Avatar" class="avatar">
+                                    </div>
+                            
+                                    <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="uname" required>
+                                
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="psw" required>
+                                        
+                                    <button type="submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                    </div>
+                            
+                                    <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none';" class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById('id01');
+                    
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function(event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        <a href="#">Cart</a>
+                </div>
+                <div id="wrap_logo">
+                    <a href="home.html">
+                        <img src="images/logo/logo2small.jpg" id="img_logo" alt="It's morbin' time">
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="nav">
+            <div class="wrap_nav">
+                <a href="home.html">Home</a>
+                <div class="module_dropdown">
+                    <button id="button_dropbtn">Brand &#9660;</button>
+                    <div class="cont_dropdown">
+                        <p>Browse brands...</p>
+                        <a href="#">Acer</a>
+                        <a href="#">Asus</a>
+                        <a href="#">HP</a>
+                        <a href="#">Huawei</a>
+                        <a href="#">MSI</a>
+                    </div>
+                </div>
+                <div class="module_dropdown">
+                    <button id="button_dropbtn">Category &#9660;</button>
+                    <div class="cont_dropdown">
+                        <p>Browse category...</p>
+                        <a href="#">Laptop</a>
+                        <a href="#">Mouse</a>
+                        <a href="#">Keyboard</a>
+                    </div>
+                </div>
+                <a href="faq.html">FAQ</a>
+                <a href="#">About Us</a>
+            </div>  
+        </div>
+           <section>
+                <h4>General Questions</h4>
+                <div class="faqbody">
+                    <div class="ques">
+                    <h2>Are those products following the latest trend in the market?</h2>
+                    <svg width="60" height="12" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                </div>
+                    <div class="ans">
+                        <p>Yes, we ensure that our online retail store will be able to provide the latest products that is available in the market as well as some popular products in the past.</p>
+                    </div>
+                </div>
+                <div class="faqbody">
+                    <div class="ques">
+                    <h2>Are laptops purchased come with important software installation such as Microsoft Office, Antivirus software, or Windows upgrade?</h2>
+                    <svg width="60" height="12" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                </div>
+                    <div class="ans">
+                        <p>Customers can contact our customers service if the installation is needed. Our store will be providing installation according to option below:</p>
+                        <ul>
+                            <li>INTERNET SECURITY ANTIVIRUS 3 YEAR (RM70.00)</li>
+                            <li>Upgrade Windows 11 Pro (RM599.00)</li>
+                            <li>MICROSOFT OFFICE 365 PERSONAL (RM179.00)</li>
+                            <li>MICROSOFT OFFICE HOME & STUDENT 2021 (RM459.00)</li>
+                            <li>MICROSOFT OFFICE HOME & BUSINESS 2021 (RM959.00)</li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="faqbody">
+                    <div class="ques">
+                    <h2>Do the products have a warranty?</h2>
+                    <svg width="60" height="12" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                </div>
+                    <div class="ans">
+                        <p>Yes, all products in our store have a warranty within the range of 12 months and 36 months.</p>
+                    </div>
+                </div>
+                <div class="faqbody">
+                    <div class="ques">
+                    <h2>How do I know which products suit my needs the most?</h2>
+                    <svg width="60" height="12" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                </div>
+                    <div class="ans">
+                        <p>If our dearly customers are having trouble deciding which is the best products for them, our customers' service is ready to help. We will be providing online suggestion to our dearly customers either through E-Mail or phone.</p>
+                    </div>
+                </div>
+                <div class="faqbody">
+                    <div class="ques">
+                    <h2>Can I pick up my products personally?</h2>
+                    <svg width="60" height="12" viewBox="0 0 42 25">
+                        <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                        </svg>
+                </div>
+                    <div class="ans">
+                        <p>Yes, customers can pick up their products personally at our store, address can be found at our website and we will also send our address to our customers.</p>
+                    </div>
+                </div>
+                <div class="faqbody">
+                    <div class="ques">
+                    <h2>Do I need to create an account to place order?</h2>
+                    <svg width="60" height="12" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                    <div class="ans">
+                        <p>For future convenience, we do recommend our dear customers to create an account. However, there is also a guest mode option in our website.</p>
+                    </div>
+                </div>
+            </section>
+            <script src="faq.js"></script>
+            <script src="acer.js"></script>
+    </body>
+    <footer>
+        <div class="wrap_footer">
+            <div class="wrap_nav_footer">
+                <h5>Navigation</h5>
+                <a href="home.html">Home</a>
+                <a href="#">Brand</a>
+                    <div class="smallerwrap_nav_footer">
+                        <ul>
+                            <li><a href="#">Acer</a></li>
+                            <li><a href="#">Asus</a></li>
+                            <li><a href="#">HP</a></li>
+                            <li><a href="#">Huawei</a></li>
+                        </ul>
+                    </div>
+                    <a href="#">Category</a>
+                        <div class="smallerwrap_nav_footer">
+                            <ul>
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Mouse</a></li>
+                                <li><a href="#">Keyboard</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+            </div>
+            <div class="wrap_brand">
+                <h5>Our Partners</h5>
+                    <a href="https://www.acer.com/ac/en/MY/content/home"><img id="icon1" src="images/logo/acerlogo.png"></a>
+                    <a href="https://www.hp.com/my-en/home.html"><img id="icon2" src="images/logo/hplogo.png"></a>
+                    <a href="https://www.asus.com/my/"><img id="icon3" src="images/logo/asuslogo3.png"></a>
+
+                    <a href="https://www.huawei.com/my/"><img id="icon4" src="images/logo/huawei-logo-png-6978.png"></a>
+
+                    <a href="https://my.msi.com/"><img id="icon5" src="images/logo/msilogo.png"></a>
+
+            </div>
+            <div class="wrap_form">
+                <div class="form">
+                  <div class="feedbackform">
+                    <form name="form1" action="">
+                      <h5>Customer Feedback</h5>
+                      <div class="input-container">
+                        <input type="text" name="name" class="input" />
+                        <label for="">Username</label>
+                        <span>Username</span>
+                      </div>
+                      <div class="input-container">
+                        <input type="email" name="email" class="input" />
+                        <label for="">Email</label>
+                        <span>Email</span>
+                      </div>
+                      <div class="input-container phone">
+                        <input type="tel" name="phone" class="input" />
+                        <label for="">Contact Number</label>
+                        <span>Phone</span>
+                      </div>
+                      <div class="input-container textarea">
+                        <textarea name="command" class="input"></textarea>
+                        <label for="">Leave your comment here!</label>
+                        <span>Message</span>
+                      </div>
+                      <input type="submit" value="Submit" class="btn" onclick="openPopup(document.form1.email)"/>
+                      <script src="form.js"></script>
+                    </form>
+                  </div>
+                </div> 
+              </div>
+        </div>
+        <p>©DIXON Computer Inc. All Rights Reserved.</p>
+            <hr id="line2">
+            <div id="wrap_media">
+                <ul>
+                    <li><a href="https://www.facebook.com"><img src="images/logo/social-facebook.png" width="3%"></a></li>
+                    <li><a href="https://www.instagram.com"><img src="images/logo/social-Instagram.png" width="3%"></a></li>
+                    <li><a href="https://www.youtube.com"><img src="images/logo/social-YouTube.png" width="3%"></a></li>
+                    <li><a href="https://www.flaticon.com"><img src="images/logo/social-LinkedIn.png" width="3%"></a></li>
+                </ul>
+            </div>
+    </footer> 
+</html>
